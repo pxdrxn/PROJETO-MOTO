@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+    z-index: 2;
+}
+
+header img {
+    width: 250px;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+section {
+    background-image: radial-gradient(#470964, #791fd3);
+    height: 100vh;
+    position: relative;
+}
+
+section .list {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+section .list .item {
+    position: absolute;
+    inset: 0;
+}
+
+section .list .item .car-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+
+section .list .item .car-img img {
+    width: 100%;
+    transform: rotate(-20deg);
+}
+
+section .list .item .content {
+    position: absolute;
+    right: 100px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+section .list .item .content .car-inf {
+    font-weight: bold;
+}
+
+section .list .item .content h2 {
+    font-size: 8em;
+    line-height: 1em;
+}
+
+section .list .item .content .desc {
+    color: #d9d9d9;
+    font-size: 12px;
+    text-align: right;
+    max-width: 400px;
+}
+
+section .list .item .content .sb {
+    border-radius: 30px;
+    height: 35px;
+    width: 120px;
+    text-transform: uppercase;
+    border: 2px solid #791fd3;
+    background-color: #beff1b;
+    color: black;
+    cursor: pointer;
+}
+
+section .arrow {
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+}
+
+section .arrow button:nth-child(1) img {
+    transform: scale(-1);
+}
+
+section .arrow button img {
+    width: 100px;
+}
+
+section .indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+section .indicators .number {
+    font-size: 5em;
+}
+
+section .indicators ul {
+    display: flex;
+    gap: 10px;
+}
+
+section .indicators ul li {
+    width: 50px;
+    height: 50px;
+    background-color: #beff1b;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+section .indicators ul li.active {
+    background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    header {
+        grid-template-columns: 1fr 400px;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    section .list .item .content {
+        right: 50px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 6em;
+    }
+
+    section .arrow button img {
+        width: 80px;
+    }
+
+    section .indicators .number {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(1, 200px);
+        text-align: center;
+    }
+
+    section .list .item .content {
+        right: 20px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 4em;
+    }
+
+    section .arrow button img {
+        width: 60px;
+    }
+
+    section .indicators .number {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    section .list .item .content {
+        right: 10px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 3em;
+    }
+
+    section .arrow button img {
+        width: 50px;
+    }
+
+    section .indicators .number {
+        font-size: 2.5em;
+    }
+
+    section .indicators ul li {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    section .list .item .content {
+        width: 90%;
+        right: 5%;
+    }
+
+    section .list .item .content h2 {
+        font-size: 2.5em;
+    }
+
+    section .arrow button img {
+        width: 40px;
+    }
+
+    section .indicators .number {
+        font-size: 2em;
+    }
+
+    section .indicators ul li {
+        width: 30px;
+        height: 30px;
+    }
+}
