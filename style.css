@@ -59,7 +59,6 @@ section {
 
                 & img {
                     width: 100%;
-
                 }
             }
 
@@ -73,7 +72,6 @@ section {
                 justify-content: center;
                 align-items: end;
                 gap: 20px;
-
 
                 & .moto-inf {
                     font-weight: bold;
@@ -114,7 +112,6 @@ section {
             top: 50%;
             border-top: 1px solid #fff;
         }
-
     }
 
     & .arrow {
@@ -126,13 +123,11 @@ section {
         display: flex;
         justify-content: space-between;
 
-
         & button:nth-child(1) {
             & img {
                 transform: scale(-1);
             }
         }
-
 
         & button {
             top: 60%;
@@ -152,7 +147,6 @@ section {
                 transition: 0.5s;
             }
         }
-
     }
 
     & .indicators {
@@ -201,16 +195,13 @@ section {
             opacity: 0;
 
             & .moto-img {
-
                 & img {
                     transition: 0.5s;
                     transition-delay: 0.3s;
                 }
-
             }
 
             & .content {
-
                 & .moto-inf,
                 h2,
                 .desc,
@@ -233,7 +224,6 @@ section {
                     transition-delay: 0.9s;
                 }
             }
-
         }
 
         & .active {
@@ -241,10 +231,7 @@ section {
             transition: 0.5s;
             opacity: 1;
 
-
-
             & .content {
-
                 & .moto-inf,
                 h2,
                 .desc,
@@ -254,5 +241,108 @@ section {
                 }
             }
         }
+    }
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    header {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+
+    header img {
+        width: 150px;
+        
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .list .item .content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: end;
+    }
+
+    section .list .item .content h2 {
+        font-size: 4em;
+    }
+
+    section .list .item .content .desc {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    section .list .item .content .sb {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .arrow {
+        width: 80vw;
+    }
+
+    .indicators {
+        width: 80vw;
+        gap: 10px;
+    }
+
+    .indicators .number {
+        font-size: 3em;
+    }
+
+    .indicators ul li {
+        width: 40px;
+        height: 4px;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 768px) {
+    header {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    section .list {
+        width: 80vw;
+    }
+
+    section .list .item .content h2 {
+        font-size: 5em;
+    }
+
+    section .list .item .content .desc {
+        font-size: 12px;
+    }
+
+    section .list .item .content .sb {
+        width: 110px;
+        height: 32px;
+    }
+
+    .arrow {
+        width: 70vw;
+    }
+
+    .indicators {
+        width: 80vw;
     }
 }
