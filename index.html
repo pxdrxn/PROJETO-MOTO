@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Anton&family=Bebas+Neue&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>FP Sellection</title>
 </head>
+
 <body>
     <header>
         <img src="img/logo.png" alt="logo">
@@ -17,23 +29,76 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="container">
         <div class="list">
-            
-            <div class="item">
-            
-                <div class="car-img">
-                    <img src="img/1.png" alt="imagem carro">
+
+            <div class="item active">
+
+                <div class="moto-img">
+                    <img src="img/MT-03_02.png" alt="imagem moto">
                 </div>
                 <div class="content">
-                    <p class="car-inf">
-                        Único Dono
+                    <p class="moto-inf">
+                        Naked de Entrada - 321 CC
                     </p>
                     <h2>
-                        Ferrari
+                        MT-03
                     </h2>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem possimus totam nisi consectetur quas. Illo nostrum vitae repellat, molestias repudiandae fugit enim accusamus nulla consequuntur dolores earum suscipit ducimus.
+                        A MT-03 é uma motocicleta da Yamaha, parte da linha MT, que é voltada para o público que busca
+                        desempenho, estilo e praticidade. Lançada no Brasil em 2015, a MT-03 se posiciona como uma moto
+                        de entrada no segmento de motos naked de média cilindrada.
+
+                        Ela é equipada com um motor de 321 cc, refrigerado a líquido, com dois cilindros, proporcionando
+                        uma boa combinação de potência e torque, ideal para quem busca uma moto ágil para o uso urbano e
+                        também para pequenas viagens. A MT-03 tem design moderno e agressivo, com linhas que remetem às
+                        motos maiores da linha MT, como a MT-07 e MT-09.
+                    </p>
+                    <button class="sb">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="moto-img">
+                    <img src="img/RACING_BLUE.png" alt="imagem moto">
+                </div>
+                <div class="content">
+                    <p class="moto-inf">
+                        Naked Intermediária - 689 CC
+                    </p>
+                    <h2>
+                        MT-07
+                    </h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem possimus totam nisi
+                        consectetur quas. Illo nostrum vitae repellat, molestias repudiandae fugit enim accusamus nulla
+                        consequuntur dolores earum suscipit ducimus.
+                    </p>
+                    <button class="sb">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="moto-img">
+                    <img src="img/MT-09_02.png" alt="imagem moto">
+                </div>
+                <div class="content">
+                    <p class="moto-inf">
+                        Naked Mais Forte Da Categoria !
+                    </p>
+                    <h2>
+                        MT-09
+                    </h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem possimus totam nisi
+                        consectetur quas. Illo nostrum vitae repellat, molestias repudiandae fugit enim accusamus nulla
+                        consequuntur dolores earum suscipit ducimus.
                     </p>
                     <button class="sb">
                         Saiba Mais
@@ -43,10 +108,10 @@
         </div>
 
         <div class="arrow">
-            <button>
+            <button id="prev">
                 <img src="img/arrow.png" alt="seta esquerda">
             </button>
-            <button>
+            <button id="next">
                 <img src="img/arrow.png" alt="seta direita">
             </button>
         </div>
@@ -59,5 +124,8 @@
             </ul>
         </div>
     </section>
+
+    <script src="./script.js"> </script>
 </body>
+
 </html>
